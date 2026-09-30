@@ -1,0 +1,39 @@
+{
+  "license": "SEE LICENSE IN LICENSE",
+  "name": "env-reaper",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "desktop": "tauri dev",
+    "desktop:build": "tauri build",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "cli": "cargo run -p env-reaper-cli --",
+    "format": "prettier --write src tests *.ts *.json && cargo fmt --all"
+  },
+  "dependencies": {
+    "@fontsource/geist": "^5.2.5",
+    "@fontsource/geist-mono": "^5.2.6",
+    "@house-edge/analytics": "file:vendor/house-edge-analytics-0.1.1.tgz",
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-dialog": "^2.4.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "prettier": "^3.9.9",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^4.1.11"
+  }
+}

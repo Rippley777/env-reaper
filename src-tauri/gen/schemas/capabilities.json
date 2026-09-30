@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Local workbench with a native folder picker","local":true,"windows":["main"],"permissions":["core:default","dialog:allow-open"]}}

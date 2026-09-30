@@ -1,0 +1,4 @@
+[workspace]
+members = ["crates/env-reaper-core", "crates/env-reaper-cli", "src-tauri"]
+default-members = ["crates/env-reaper-core", "crates/env-reaper-cli"]
+resolver = "2"
