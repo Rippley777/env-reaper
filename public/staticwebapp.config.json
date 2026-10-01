@@ -1,0 +1,11 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/*.{css,js,wasm,svg,png,jpg,webp,woff2}"]
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "mimeTypes": { ".wasm": "application/wasm" }
+}
